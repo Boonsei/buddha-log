@@ -1,0 +1,19 @@
+h2, a, button {
+    color: grey;
+}
+a {
+  text-decoration: underline;
+  font-style: italic;
+}
+button {
+  font-style: italic;
+}
+a::before {
+  content: "[";
+}
+a::after {
+  content: "]";
+}
+.prose > p {
+  margin-top: 2.5rem;
+}

@@ -1,0 +1,19 @@
+{
+  "name": "buddha-log",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview"
+  },
+  "dependencies": {
+    "@nuxt/content": "^3.12.0",
+    "@nuxt/image": "^2.0.0",
+    "@nuxtjs/tailwindcss": "^6.14.0",
+    "better-sqlite3": "^12.8.0",
+    "gsap": "^3.14.2",
+    "nuxt": "^4.4.2"
+  }
+}
