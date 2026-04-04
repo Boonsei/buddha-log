@@ -46,6 +46,6 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Deploy to gihub pages
-              uses: actions/deploy-pages@v2
+              uses: actions/deploy-pages@v4
               id: deployment
 
