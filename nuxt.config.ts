@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   nitro: {
     preset: 'static'
-  }, 
+  },
   modules: ['@nuxt/content', '@nuxtjs/tailwindcss', '@nuxt/image'],
   devtools: { enabled: true },
   css: ['@/assets/main.css'],
