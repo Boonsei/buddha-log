@@ -2,7 +2,7 @@
 .data
 .nuxt
 .nitro
-.cache
+.cache 
 
 # Node dependencies
 node_modules
