@@ -13,7 +13,7 @@ if (!page.value) {
 }
 onMounted(() => {
   const textElements = contentRef.value?.querySelectorAll('.text-anim, h1, h2, .prose > p');
-  console.log(contentRef.value?.querySelectorAll('.prose > p'))
+  //console.log(contentRef.value?.querySelectorAll('.prose > p'))
 
   const tl = $gsap.timeline()
   tl.from(textElements, {

@@ -1,6 +1,6 @@
 <template>
 <main class="max-w-3xl px-10 pb-[100px] md:mx-auto w-full mt-12">
-  <NuxtImg src="/phaya-krut.png" alt="Phaya Krut" class="w-16 h-16 mb-12" :placeholder="[16, 16, 75, 10]" loading="eager" @click="navigateTo('/')"/>
+  <NuxtImg src="/phaya-krut.png" alt="Phaya Krut" class="w-16 h-16 mb-12 cursor-pointer" :placeholder="[16, 16, 75, 10]" loading="eager" @click="navigateTo('/')"/>
   <NuxtRouteAnnouncer />
   <NuxtPage :transition="{ name: 'page', mode: 'out-in' }" />
 </main>

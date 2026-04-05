@@ -20,23 +20,27 @@ const props = defineProps({
 })
 
 const showExtraText = ref(false)
-const extraTextRef = ref(null)
+const extraTextContainer = ref(null)
 const extraTextText = ref(null)
+const extraTextContent = ref(null)
 
 let splitAnimation
 
 function toggleExtraText () {
     showExtraText.value = !showExtraText.value
+    console.log("toggle Extra Text triggered")
 
     if (showExtraText.value) {
-        $gsap.to(extraTextRef.value, { opacity: 1, height: 'auto', duration: 0.3, ease: 'power2.inOut' })
+        $gsap.to(extraTextContainer.value, { opacity: 1, height: 'auto', duration: 0.3, ease: 'power2.inOut' })
         splitAnimation.restart()
     } else {
-        $gsap.to(extraTextRef.value, { opacity: 0, height: 0, duration: 0.3, ease: 'power2.inOut' })
+        $gsap.to(extraTextContainer.value, { opacity: 0, height: 0, duration: 0.3, ease: 'power2.inOut' })
     }
 }
-onMounted (()=>{
-    if (extraTextRef.value) {
+
+onMounted (async ()=>{
+    if (extraTextContainer.value) {
+        console.log("Extratext container is there")
         $SplitText.create(extraTextText.value, {
             type: 'lines',
             autoSplit: true,
@@ -58,13 +62,17 @@ onMounted (()=>{
             <h3 class="break-words">{{ header }}</h3>
             <h4 v-if="subhead">{{ subhead }}</h4>
         </div>
-        <div class="col-span-2 italic slot-text text-anim" :class="{ 'cursor-pointer': extraText }" @click="toggleExtraText">
-            <slot></slot>
-            <button v-if="extraText" class="col-start-2 col-span-2 w-fit inline">&nbsp;({{ showExtraText ? '-' : 'i' }})</button>
+        <div class="col-span-2 italic slot-text text-anim">
+            <div>
+                <slot></slot>
+                <button v-if="$slots.extraText" @click="toggleExtraText" class="col-start-2 col-span-2 w-fit inline">&nbsp;({{ showExtraText ? '-' : 'i' }})</button>
+            </div>
             <NuxtLink v-if="link" :to="link" class="block">mehr</NuxtLink>
-            <div ref="extraTextRef" v-if="extraText" class="block overflow-hidden h-0">
+            <div ref="extraTextContainer" v-if="$slots.extraText" class="block overflow-hidden h-0">
                 <div class="mt-2">
-                    <div ref="extraTextText">{{ extraText }}</div>
+                    <div ref="extraTextText">
+                        <slot name="extraText"></slot>
+                    </div>
                 </div>
             </div>
         </div>

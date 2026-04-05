@@ -3,8 +3,11 @@
 
 Dieser Pfad soll zum Ende von Leiden führen.
 
-::row-text{header="1 Rechte Ansicht." extraText="Realisieren dass Leid da ist und, dass die Ursache Verlangen, Anhaftung, Hass und Unwissenheit ist — wenn wir die Ursache loslassen sind wir frei. Dabei hilft der edle achtfache Pfad."}
-Verständnis der vier edlen Wahrheiten
+::row-text{header="1 Rechte Anschauung."}
+Verständnis der vier edlen Wahrheiten, und sie als Wahrheit annehmen.
+#extraText
+Einsicht in — die Leidhaftigkeit des Daseins, in die Wahrheit der Entstehung des Leidens, in die Aufhebung des Leidens (daran glauben, dass es transformiert werden kann), und den Weg der dorthin führt.  
+Kurz gesagt das Vertrauen darin, dass die Lehre Buddhas richtig und vertrauenswürdig ist.
 ::
 
 ::row-text{header="2 Rechte Gesinnung."}
@@ -23,8 +26,9 @@ Handlungen ohne Töten, Stehlen oder sexuellem Fehlverhalten.
 Geldverdienen auf eine Art die nicht schadet, und sogar gut für Menschen ist.
 ::
 
-::row-text{header="6 Rechte Anstrengung." link="/der-edle-achtfache-pfad/rechte-anstrengung" extraText=""}
-Energie — unheilsame Gedanken zu meiden und heilsame zu fördern.
+::row-text{header="6 Rechte Anstrengung." extraText=""}
+Energie — unheilsame Gedanken zu meiden und heilsame zu fördern.  
+[rechte Anstrengung üben](/der-edle-achtfache-pfad/rechte-anstrengung)
 ::
 
 ::row-text{header="7 Rechte Achtsamkeit."}
